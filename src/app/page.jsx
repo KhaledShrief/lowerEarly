@@ -27,30 +27,30 @@ export default function Home() {
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container">
             <div className="embla__slide bg-none">
-              <img className='' src="/DSCF1505-scaled-1024x615.jpg" alt="1" width={1000} height={500} />
+              <Image className='' src="/DSCF1505-scaled-1024x615.jpg" alt="1" width={1000} height={500} />
             </div>
 
             <div className="embla__slide">
-              <img className='' src="/DSCF1526-scaled-1024x615.jpg" alt="1" width={1000} height={500} />
+              <Image className='' src="/DSCF1526-scaled-1024x615.jpg" alt="1" width={1000} height={500} />
             </div>
             <div className="embla__slide">
-              <img className='' src="/Air-con-pic--scaled-1024x615.jpg" alt="1" width={1000} height={500} />
+              <Image className='' src="/Air-con-pic--scaled-1024x615.jpg" alt="1" width={1000} height={500} />
 
             </div>
             <div className="embla__slide">
-              <img className='' src="/Rolling-photo--scaled-1024x615.jpg" alt="1" width={1000} height={500} />
+              <Image className='' src="/Rolling-photo--scaled-1024x615.jpg" alt="1" width={1000} height={500} />
 
             </div>
             <div className="embla__slide">
-              <img className='' src="/Rolling-photos--scaled-1024x615.jpg" alt="1" width={1000} height={500} />
+              <Image className='' src="/Rolling-photos--scaled-1024x615.jpg" alt="1" width={1000} height={500} />
 
             </div>
             <div className="embla__slide">
-              <img className='' src="/Diagnostics-pic-scaled-1024x615.jpg" alt="1" width={1000} height={500} />
+              <Image className='' src="/Diagnostics-pic-scaled-1024x615.jpg" alt="1" width={1000} height={500} />
 
             </div>
             <div className="embla__slide">
-              <img className='' src="/andrew-picture-448x269.jpg" alt="1" width={1000} height={500} />
+              <Image className='' src="/andrew-picture-448x269.jpg" alt="1" width={1000} height={500} />
 
             </div>
           </div>
