@@ -83,6 +83,7 @@ export default function Home() {
             Lower Earley
             RG6 4UT
           </p>
+
           <h1>
             CONTACT DETAILS
           </h1>
