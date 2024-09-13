@@ -1,8 +1,6 @@
 "use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { GoChevronRight } from "react-icons/go";
-
 
 const Accordion = ({ items, icon, currentPath }) => {
     const [expand, setExpand] = useState(null);
@@ -31,8 +29,7 @@ const Accordion = ({ items, icon, currentPath }) => {
                             <Link href={`/${item.name.toLowerCase()}`} className={`flex flex-[0.9] gap-2 p-2 ${currentPath === `/${item.name.toLowerCase()}` ? " text-white" : ""} text-[#b9b8b8]`}>
                                 {icon} {item.name}
                             </Link>
-                            <div onClick={() => handleExpand(item.id)} className="h-full flex-[0.1] hover:bg-gray-600 cursor-pointer transition-all rounded-e-lg p-3 flex items-center justify-center">{isOpen ? <GoChevronRight className="rotate-90 " /> : <GoChevronRight />
-                            }</div>
+                            <div onClick={() => handleExpand(item.id)} className="h-full flex-[0.1] hover:bg-gray-600 cursor-pointer transition-all rounded-e-lg p-2 flex items-center justify-center">{isOpen ? <div className="rotate-90">&#8250;</div> : <div>&#8250;</div>}</div>
                         </div>
                     </div>
 

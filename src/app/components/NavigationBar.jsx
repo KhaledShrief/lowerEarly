@@ -24,7 +24,7 @@ const NavigationBar = () => {
                 <NavbarItem isActive={currentPath === "/" ? true : false}>
                     <Link color={`${currentPath === "/" ? "primary" : "foreground"}`} href="/" aria-current="page" className="flex gap-1 text-black">
                         <GoOrganization className="w-5 h-5" />
-                        Lower Early MOT's
+                        Lower Early MOT&apos;s
                     </Link>
                 </NavbarItem>
                 <NavbarItem isActive={currentPath === "/mot-testing" ? true : false}>
