@@ -16,8 +16,8 @@ const NavigationBar = () => {
         <Navbar className=" border-b-1 bg-[#FFAD60] text-black border-gray-700 opacity-[0.8] ">
             <NavbarBrand >
                 <div className="flex justify-center flex-col  items-center w-fit h-[100px]">
-                    <h1 className="text-white font-bold text-[20px]">Lower Earley</h1>
-                    <p className=" font-serif relative top-[-12px] text-orange-500">The Art of Car Checks.</p>
+                    <h1 className="text-red-500 font-bold text-[20px]">Lower Earley</h1>
+                    <p className=" font-serif relative top-[-12px] text-red-500">The Art of Car Checks.</p>
                 </div>
             </NavbarBrand>
             <NavbarContent className="hidden sm:flex gap-4 font-extrabold" justify="center">
