@@ -25,32 +25,56 @@ export default function Home() {
     <>
       <div className="embla">
         <div className="embla__viewport" ref={emblaRef}>
-          <div className="embla__container">
-            <div className="embla__slide bg-none">
-              <Image className='' src="/DSCF1505-scaled-1024x615.jpg" alt="1" width={600} height={300} />
-            </div>
-
+          <div className="embla__container gap-0">
             <div className="embla__slide">
-              <Image className='' src="/DSCF1526-scaled-1024x615.jpg" alt="1" width={600} height={300} />
-            </div>
-            <div className="embla__slide">
-              <Image className='' src="/Air-con-pic--scaled-1024x615.jpg" alt="1" width={600} height={300} />
+              <Image className='' src="/chris.jpg" alt="1" width={400} height={200} />
 
             </div>
             <div className="embla__slide">
-              <Image className='' src="/Rolling-photo--scaled-1024x615.jpg" alt="1" width={600} height={300} />
+              <Image className='' src="/DSCF1505-scaled-1024x615.jpg" alt="1" width={400} height={200} />
+            </div>
+            <div className="embla__slide">
+              <Image className='' src="/gemy.jpg" alt="1" width={400} height={200} />
+
+            </div>
+
+            <div className="embla__slide">
+              <Image className='' src="/DSCF1526-scaled-1024x615.jpg" alt="1" width={400} height={200} />
+            </div>
+            <div className="embla__slide">
+              <Image className='' src="/andrew-picture-448x269.jpg" alt="1" width={400} height={200} />
 
             </div>
             <div className="embla__slide">
-              <Image className='' src="/Rolling-photos--scaled-1024x615.jpg" alt="1" width={600} height={300} />
+              <Image className='' src="/Air-con-pic--scaled-1024x615.jpg" alt="1" width={400} height={200} />
 
             </div>
             <div className="embla__slide">
-              <Image className='' src="/Diagnostics-pic-scaled-1024x615.jpg" alt="1" width={600} height={300} />
+              <Image className='' src="/jimy.jpg" alt="1" width={400} height={200} />
 
             </div>
             <div className="embla__slide">
-              <Image className='' src="/andrew-picture-448x269.jpg" alt="1" width={600} height={300} />
+              <Image className='' src="/Rolling-photo--scaled-1024x615.jpg" alt="1" width={400} height={200} />
+
+            </div>
+            <div className="embla__slide">
+              <Image className='' src="/julie.jpg" alt="1" width={400} height={200} />
+
+            </div>
+            <div className="embla__slide">
+              <Image className='' src="/Rolling-photos--scaled-1024x615.jpg" alt="1" width={400} height={200} />
+
+            </div>
+            <div className="embla__slide">
+              <Image className='' src="/ping.jpg" alt="1" width={400} height={200} />
+
+            </div>
+            <div className="embla__slide">
+              <Image className='' src="/Diagnostics-pic-scaled-1024x615.jpg" alt="1" width={400} height={200} />
+
+            </div>
+            <div className="embla__slide">
+              <Image className='' src="/justin.jpg" alt="1" width={400} height={200} />
 
             </div>
           </div>

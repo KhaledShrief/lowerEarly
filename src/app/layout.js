@@ -24,6 +24,7 @@ import "./globals.css";
 import Provider from "./Provider";
 import Sidebar from "./components/Sidebar";
 import NavigationBar from "./components/NavigationBar";
+import Image from "next/image";
 // import Footer from "./components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,32 +45,9 @@ export default function RootLayout({ children }) {
             <NavigationBar />
             <div className="w-full bg-white ">{children}</div>
             <>
-              <div className="w-full h-fit bg-[#4E31AA] border-gray-800 border-t-1 p-10 flex flex-col justify-center items-center">
-                <Card className="max-w-[340px]">
-                  <CardHeader className="justify-center">
-                    <div className="flex flex-col justify-center items-center gap-5">
-                      <Avatar isBordered radius="full" size="md" src="https://nextui.org/avatars/avatar-1.png" />
-                      <div className="flex flex-col gap-1 items-start justify-center">
-                        <h4 className="text-small font-semibold leading-none text-default-600">Zoey Lang</h4>
-                        <h5 className="text-small tracking-tight text-default-400">@zoeylang</h5>
-                      </div>
-                    </div>
-
-                  </CardHeader>
-                  <CardBody className="px-3 py-0 text-small text-default-400">
-                    <p>
-                      Frontend developer and UI/UX enthusiast. Join me on this coding adventure!
-                    </p>
-                  </CardBody>
-                  <CardFooter className="flex gap-1">
-                    <FaStar className="text-orange-500 w-5 h-5" />
-                    <FaStar className="text-orange-500 w-5 h-5" />
-                    <FaStar className="text-orange-500 w-5 h-5" />
-                    <FaStar className="text-orange-500 w-5 h-5" />
-                    <FaStar className="text-orange-500 w-5 h-5" />
-
-                  </CardFooter>
-                </Card>
+              <div className="w-full h-fit bg-[#4E31AA] border-gray-800 border-t-1 p-10 flex justify-between items-center">
+                <Image width={400} height={350} src="/lower-card.jpg" className="w-full p-5 px-40 h-[200px]" />
+                <Image width={400} height={350} src="/cga-card.jpg" className="w-full p-5 px-40 h-[200px]" />
               </div>
               <div className="w-full h-fit bg-[#4E31AA] border-gray-800 border-t-1 p-10 flex justify-center items-center">
                 <div className="flex justify-between items-center">
