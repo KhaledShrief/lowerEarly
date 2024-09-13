@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
         <main className="w-[82.5%] h-full bg-white relative left-[17.5%] top-0 z-40">
 
           <Provider>
-            <img src="/logo-transparent-with-pic.jpg" className="w-full  h-[200px]" />
+            <img src="/logo-transparent-with-pic.jpg" className="w-full p-5 px-10 h-[200px]" />
             <NavigationBar />
             <div className="w-full bg-white ">{children}</div>
             <>
