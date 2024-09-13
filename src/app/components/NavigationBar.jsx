@@ -13,10 +13,10 @@ const NavigationBar = () => {
 
 
     return (
-        <Navbar className="p-3 border-b-1 bg-[#FFAD60] text-black border-gray-700 opacity-[0.8] ">
+        <Navbar className=" border-b-1 bg-[#FFAD60] text-black border-gray-700 opacity-[0.8] ">
             <NavbarBrand >
                 <div className="flex justify-center flex-col  items-center w-fit h-[100px]">
-                    <h1 className="text-white font-bold text-[20px]">Lower Early</h1>
+                    <h1 className="text-white font-bold text-[20px]">Lower Earley</h1>
                     <p className=" font-serif relative top-[-12px] text-orange-500">The Art of Car Checks.</p>
                 </div>
             </NavbarBrand>
@@ -24,7 +24,7 @@ const NavigationBar = () => {
                 <NavbarItem isActive={currentPath === "/" ? true : false}>
                     <Link color={`${currentPath === "/" ? "primary" : "foreground"}`} href="/" aria-current="page" className="flex gap-1 text-black">
                         <GoOrganization className="w-5 h-5" />
-                        Lower Early MOT&apos;s
+                        Lower Earley MOT&apos;s
                     </Link>
                 </NavbarItem>
                 <NavbarItem isActive={currentPath === "/mot-testing" ? true : false}>
