@@ -45,9 +45,9 @@ export default function RootLayout({ children }) {
             <NavigationBar />
             <div className="w-full bg-white ">{children}</div>
             <>
-              <div className="w-full h-fit bg-[#4E31AA] border-gray-800 border-t-1 p-10 flex justify-center gap-5 items-center">
-                <Image width={400} height={350} src="/lower-card.jpg" className="w-full p-5 px-40 h-[200px]" />
-                <Image width={400} height={350} src="/cga-card.jpg" className="w-full p-5 px-40 h-[200px]" />
+              <div className="w-full h-fit bg-[#4E31AA] border-gray-800 border-t-1 p-10 flex justify-center gap-20 items-center">
+                <Image width={400} height={350} src="/lower-card.jpg" className="w-full flex-[0.5]  h-[200px]" />
+                <Image width={400} height={350} src="/cga-card.jpg" className="w-full flex-[0.5]  h-[200px]" />
               </div>
               <div className="w-full h-fit bg-[#4E31AA] border-gray-800 border-t-1 p-10 flex justify-center items-center">
                 <div className="flex justify-between items-center">

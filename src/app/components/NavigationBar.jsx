@@ -36,7 +36,7 @@ const NavigationBar = () => {
                     <Link color={`${currentPath === "/cga-parts" ? "primary" : "foreground"}`} href="/cga-parts" className="flex gap-1 text-black">
                         <GiMechanicGarage className="w-5 h-5" />
 
-                        CGA Part
+                        CGA Parts
                     </Link>
                 </NavbarItem>
                 <NavbarItem isActive={currentPath === "/side-services" ? true : false}>
