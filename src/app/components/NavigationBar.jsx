@@ -65,7 +65,7 @@ const NavigationBar = () => {
                             className="text-white"
                             description="ACME scales apps to meet user demand, automagically, based on load."
                             startContent={<img src="/images.png" className="w-5 h-5" />}
-                            href="/injector-testing"
+                            href="https://lowerearleymots.co.uk/bookings"
                         >
 
                             Booking
