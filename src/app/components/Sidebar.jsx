@@ -58,7 +58,7 @@ const Sidebar = () => {
         },
     ]
     return (
-        <div className="w-[17.5%] fixed bg-[#41B3A2]  font-bold left-0 top-0 h-screen  border-r-1 border-gray-800 shadow-xl z-50">
+        <div className="w-[17.5%] fixed bg-slate-950  font-bold left-0 top-0 h-screen  border-r-1 border-gray-800 shadow-xl z-50">
             <div className="flex justify-center flex-col  items-center w-full h-fit">
                 {/* <h1 className="text-white font-bold text-[20px]">CGA Parts</h1> */}
                 <img src="/download.jfif" className="w-full p-10  h-[200px]" />
