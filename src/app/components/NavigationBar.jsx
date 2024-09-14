@@ -26,14 +26,14 @@ const NavigationBar = () => {
                     </Link>
                 </NavbarItem>
                 <NavbarItem isActive={currentPath === "/mot-testing" ? true : false}>
-                    <Link href="/mot-testing" color={`${currentPath === "/mot-testing" ? "primary" : "foreground"}`} className="flex gap-1 text-black">
+                    <Link href="https://lowerearleymots.co.uk/bookings" color={`${currentPath === "/mot-testing" ? "primary" : "foreground"}`} className="flex gap-1 text-black">
                         <SiTestcafe className="w-5 h-5" />
 
                         MOT Testing
                     </Link>
                 </NavbarItem>
                 <NavbarItem isActive={currentPath === "/cga-parts" ? true : false}>
-                    <Link color={`${currentPath === "/cga-parts" ? "primary" : "foreground"}`} href="/cga-parts" className="flex gap-1 text-black">
+                    <Link color={`${currentPath === "/cga-parts" ? "primary" : "foreground"}`} href="https://cgaparts.lowerearleymots.co.uk/" className="flex gap-1 text-black">
                         <GiMechanicGarage className="w-5 h-5" />
 
                         CGA Parts

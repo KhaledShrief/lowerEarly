@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
         <main className="w-[82.5%] h-full bg-white relative left-[17.5%] top-0 z-40">
 
           <Provider>
-            <img src="/logo-transparent-with-pic.jpg" className="w-full p-5 px-40 h-[200px]" />
+            <img src="/logo-transparent-with-pic.jpg" className="w-full p-5 px-40 h-[200px]" id="up" />
             <NavigationBar />
             <div className="w-full bg-white ">{children}</div>
             <>
@@ -50,18 +50,7 @@ export default function RootLayout({ children }) {
                 <Image width={400} height={350} src="/cga-card.jpg" className="w-full flex-[0.5]  h-[200px]" />
               </div>
               <div className="w-full h-fit bg-[#4E31AA] border-gray-800 border-t-1 p-10 flex justify-center items-center">
-                <div className="flex justify-between items-center">
-                  <div className="text-white text-center flex flex-col text-2xl flex[0.5]">
-                    <Link href="#">Home</Link>
-                    <Link href="#">Service Policy and About Us</Link>
-                    <Link href="#">Contact Us</Link>
-                  </div>
-                  <div className="text-white text-center flex flex-col text-2xl flex[0.5]">
-                    <Link href="#">Home</Link>
-                    <Link href="#">Service Policy and About Us</Link>
-                    <Link href="#">Contact Us</Link>
-                  </div>
-                </div>
+                <Link href="#up" className="text-white font-bold">Back to top</Link>
               </div>
             </>
           </Provider>
