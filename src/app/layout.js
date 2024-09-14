@@ -37,8 +37,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className='bg-slate-950'>
       <body className="dark text-black flex w-[100%] h-screen relative" >
-        <Sidebar />
-        <main className="w-[82.5%] h-full bg-white relative left-[17.5%] top-0 z-40">
+        {/* <Sidebar /> */}
+        <main className="w-full h-full bg-white relative  top-0 z-40">
 
           <Provider>
             <img src="/logo-transparent-with-pic.jpg" className="w-full p-5 px-40 h-[200px]" id="up" />
