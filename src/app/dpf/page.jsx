@@ -1,20 +1,23 @@
 const Dbf = () => {
     return <div className="p-10 flex-col gap-20 flex bg-gray-200">
         <section className="flex flex-col gap-10 w-full h-fit p-10 bg-white rounded-2xl shadow-2xl">
-            <header className="flex flex-col gap-4 items-center justify-center w-full h-fit">
+            <header className="flex  gap-1 items-center justify-center w-full h-fit">
+                <div className="flex-[0.5]  border-b-2 border-gray-500 p-8">
 
-                <h1 className="text-3xl font-bold">
-                    DPF Cleaning
+                    <h1 className="text-3xl text-gray-500  font-bold">
+                        Our Flagship, Commercial DPF Cleaners
+                    </h1>
+                </div>
+                <div className="flex-[0.5] flex justify-end">
 
-                </h1>
-                <p className="text-xl text-gray-500">
-                    Like any filter, your DPF can become blocked by engine produced particulates. The main constituent of these particulates is ‘Soot’!
-                </p>
+                    <img src="/DCS-20-SERIES-LOGO-1.png" className="h-[20vh] w-[50vh]" />
+                </div>
+
             </header>
             <article className="flex  gap-4 items-center  w-full h-fit">
                 <div className="flex flex-col gap-4 items-center justify-center flex-[0.5] h-fit">
                     <ul className="flex flex-col gap-8 items-center justify-center w-full h-fit">
-                        <li className="text-xl text-gray-500 font-bold">Cleaning the DPF – Cost £100.00 +VAT this is for a DPF already removed from a vehicle</li>
+                        <li className="text-xl text-gray-500 font-bold">Cleaning the DPF – Cost from £150.00 +VAT this is for a DPF already removed from a vehicle</li>
                         <li className="text-xl text-gray-500 font-bold">Removing the DPF and cleaning can also be done for you but please ring to get a quote</li>
 
                     </ul>
