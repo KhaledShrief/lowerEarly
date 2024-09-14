@@ -1,6 +1,6 @@
 const Dbf = () => {
     return <div className="p-10 flex-col gap-20 flex bg-gray-200">
-        <section className="flex flex-col gap-10 w-full h-fit p-10 bg-white rounded-2xl">
+        <section className="flex flex-col gap-10 w-full h-fit p-10 bg-white rounded-2xl shadow-2xl">
             <header className="flex flex-col gap-4 items-center justify-center w-full h-fit">
 
                 <h1 className="text-3xl font-bold">
@@ -28,7 +28,7 @@ const Dbf = () => {
 
             </article>
         </section>
-        <section className="flex flex-col gap-10 w-full h-fit bg-white p-10 rounded-2xl">
+        <section className="flex flex-col gap-10 w-full h-fit bg-white p-10 rounded-2xl shadow-2xl">
             <header className="flex flex-col gap-4 items-center justify-center w-full h-fit">
 
                 <h1 className="text-3xl font-bold">
@@ -56,7 +56,7 @@ const Dbf = () => {
 
             </article>
         </section>
-        <section className="flex flex-col gap-10 w-full h-fit p-10 bg-white rounded-2xl">
+        <section className="flex flex-col gap-10 w-full h-fit p-10 bg-white rounded-2xl shadow-2xl">
             <header className="flex flex-col gap-4 items-center justify-center w-full h-fit">
 
                 <h1 className="text-3xl font-bold">
