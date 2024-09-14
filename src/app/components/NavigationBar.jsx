@@ -16,7 +16,7 @@ const NavigationBar = () => {
     return (
         <Navbar className=" border-b-1 bg-[#FFAD60] text-black border-gray-700 opacity-[0.8] ">
             <NavbarBrand >
-                <Image src="/lower_earley-logo.png" className="h-full w-fit" width={250} height={200} />
+                <Image src="/lower_earley-logo.png" width={250} height={200} />
             </NavbarBrand>
             <NavbarContent className="hidden sm:flex gap-4 font-extrabold" justify="center">
                 <NavbarItem isActive={currentPath === "/" ? true : false}>

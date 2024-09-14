@@ -58,7 +58,7 @@ export default function Home() {
 
             </div>
             <div className="embla__slide">
-              <Image className='' src="/julie.jpg" alt="1" width={400} height={200} />
+              <Image className='' src="/Julie.jpg" alt="1" width={400} height={200} />
 
             </div>
             <div className="embla__slide">
