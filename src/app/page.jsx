@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="embla" id="up">
+      <div className="embla" >
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container gap-0">
             <div className="embla__slide">
