@@ -27,6 +27,10 @@ export default function Home() {
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container gap-0">
             <div className="embla__slide">
+              <Image className='' src="/car.jpg" alt="1" width={400} height={200} />
+
+            </div>
+            <div className="embla__slide">
               <Image className='' src="/chris.jpg" alt="1" width={400} height={200} />
 
             </div>

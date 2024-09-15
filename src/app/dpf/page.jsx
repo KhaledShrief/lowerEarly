@@ -53,7 +53,7 @@ const Dbf = () => {
                 </div>
                 <div className="flex-[0.5] h-fit">
                     <video className="w-full h-[300px] rounded-2xl" controls autoPlay loop muted>
-                        <source src="/dpf.mp4" type="video/mp4" />
+                        <source src="/dpf2.mp4" type="video/mp4" />
                     </video>
                 </div>
 
@@ -78,9 +78,7 @@ const Dbf = () => {
 
                 </div>
                 <div className="flex-[0.5] h-fit">
-                    <video className="w-full h-[300px] rounded-2xl" controls autoPlay loop muted>
-                        <source src="/dpf.mp4" type="video/mp4" />
-                    </video>
+                    <img src="/dpf3.jfif" className="w-full h-[250px] rounded-2xl" />
                 </div>
 
             </article>
