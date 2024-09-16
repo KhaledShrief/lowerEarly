@@ -57,8 +57,11 @@ export default function RootLayout({ children }) {
             <div className="w-full bg-white ">{children}</div>
             <>
               <div className="w-full h-fit bg-[#4E31AA] border-gray-800 border-t-1 p-10 flex flex-col lg:flex-row justify-center gap-20 items-center">
-                <img src="/lower-card.jpg" className="w-full flex-[0.5] h-[200px]" />
-                <img src="/cga-card.jpg" className="w-full flex-[0.5] h-[200px]" />
+                <img src="/lower-card.jpg" className="w-full rounded-xl flex-[0.33] h-[200px]" />
+                <Link href="https://g.page/r/CeSLKfqzc-DEEAg/review">
+                  <img src="/rate.png" className="w-full rounded-xl  flex-[0.33] h-[200px]" />
+                </Link>
+                <img src="/cga-card.jpg" className="w-full rounded-xl  flex-[0.33] h-[200px]" />
               </div>
 
               <div className="w-full h-fit bg-[#4E31AA] border-gray-800 border-t-1 p-10 flex justify-center items-center">
