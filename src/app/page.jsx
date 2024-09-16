@@ -84,7 +84,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='flex w-full justify-between   px-40 py-2'>
+        <div className='flex w-full justify-between   px-[20rem] py-3'>
 
           <button className="embla__prev items-center  flex gap-2" onClick={scrollPrev}>
             <GoArrowLeft className='w-10 h-10 border-1 border-black  p-1 rounded-full' />
