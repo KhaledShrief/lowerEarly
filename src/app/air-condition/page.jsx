@@ -32,8 +32,6 @@ const AirCondition = () => {
 
                             Let Lower Earley recharge your air con while you wait. We will replace and recharge lubricant and refrigerant levels in line with your manufacturer’s recommendation. If we cannot improve the coolest vent temperature from your car by more than 10% when measured in degrees Celsius - then you pay nothing at all.*
 
-                            If you have pre-paid by booking your appointment online, we will arrange for your credit or debit card to be refunded.
-
                             * Please note if the ambient temperature around the car is less than 9 degrees Celsius it may affect the results of the air con recharge test results. In these circumstances, it is at the manager’s discretion whether to offer a refund with results less than 10%
 
                             Air Conditioning Cleaning
