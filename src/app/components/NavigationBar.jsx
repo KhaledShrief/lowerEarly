@@ -64,7 +64,7 @@ const NavigationBar = () => {
                         <DropdownItem
                             key="injector-testing"
                             className="text-white"
-                            description="ACME scales apps to meet user demand, automagically, based on load."
+                            description="MOT & Tracking."
                             startContent={<img src="/images.png" className="w-5 h-5" />}
                             href="https://lowerearleymots.co.uk/bookings"
                         >
@@ -112,7 +112,7 @@ const NavigationBar = () => {
                         <DropdownItem
                             key="dpf"
                             className="text-white"
-                            description="ACME scales apps to meet user demand, automagically, based on load."
+                            description="Cleaning"
                             startContent={<FaCarBurst className="w-5 h-5" />}
                             href="/dpf"
                         >
@@ -123,7 +123,7 @@ const NavigationBar = () => {
                         <DropdownItem
                             key="air-condition"
                             className="text-white"
-                            description="ACME scales apps to meet user demand, automagically, based on load."
+                            description="Regas"
                             startContent={<MdAir className="w-5 h-5" />}
                             href="/air-condition"
                         >
@@ -134,7 +134,7 @@ const NavigationBar = () => {
                         <DropdownItem
                             key="tyres"
                             className="text-white"
-                            description="ACME scales apps to meet user demand, automagically, based on load."
+                            description="New Tyres"
                             startContent={<GiTyre className="w-5 h-5" />}
                             href="/tyres"
                         >
@@ -145,7 +145,7 @@ const NavigationBar = () => {
                         <DropdownItem
                             key="injector-testing"
                             className="text-white"
-                            description="ACME scales apps to meet user demand, automagically, based on load."
+                            description="Testing"
                             startContent={<TbCarTurbine className="w-5 h-5" />}
                             href="/injector-testing"
                         >
@@ -156,7 +156,7 @@ const NavigationBar = () => {
                         <DropdownItem
                             key="software"
                             className="text-white"
-                            description="ACME scales apps to meet user demand, automagically, based on load."
+                            description="Software Development"
                             startContent={<CgSoftwareDownload className="w-5 h-5" />}
                             href="/software"
                         >
