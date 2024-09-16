@@ -84,13 +84,19 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='flex w-fit gap-2 p-2'>
+        <div className='flex w-full justify-between   px-40 py-2'>
 
-          <button className="embla__prev border-1 border-black w-fit p-1 rounded-full" onClick={scrollPrev}>
-            <GoArrowLeft className='w-5 h-5' />
+          <button className="embla__prev items-center  flex gap-2" onClick={scrollPrev}>
+            <GoArrowLeft className='w-10 h-10 border-1 border-black  p-1 rounded-full' />
+            <div>
+              Previous
+            </div>
           </button>
-          <button className="embla__next border-1 border-black w-fit p-1 rounded-full" onClick={scrollNext}>
-            <GoArrowRight className='w-5 h-5' />
+          <button className="embla__next items-center flex gap-2" onClick={scrollNext}>
+            <div>
+              Next
+            </div>
+            <GoArrowRight className='w-10 h-10 border-1 border-black  p-1 rounded-full' />
           </button>
         </div>
       </div>
