@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
         <main className="w-full h-full bg-white relative  top-0 z-40">
 
           <Provider>
-            <img src="/logo-transparent-with-pic.jpg" className="w-full p-5 px-40 h-[200px]" id="up" />
+            <img src="/logo-transparent-with-pic.jpg" className="w-full p-5 px-[20rem] h-[150px]" id="up" />
             <NavigationBar />
             <div className="w-full bg-white ">{children}</div>
             <>
