@@ -31,11 +31,11 @@ export default function Home() {
 
             </div>
             <div className="embla__slide">
-              <Image className='' src="/chris.jpg" alt="1" width={400} height={200} />
+              <Image className='' src="/chris.jpg" alt="1" width={400} height={150} />
 
             </div>
             <div className="embla__slide">
-              <Image className='' src="/DSCF1505-scaled-1024x615.jpg" alt="1" width={400} height={200} />
+              <Image className='' src="/DSCF1505-scaled-1024x615.jpg" alt="1" width={400} height={150} />
             </div>
             <div className="embla__slide">
               <Image className='' src="/gemy.jpg" alt="1" width={400} height={200} />
