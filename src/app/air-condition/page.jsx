@@ -13,8 +13,6 @@ const AirCondition = () => {
                 <div className="flex-[0.5] flex justify-center">
                     <MdAir className="h-[20vh] text-yellow-400 w-[30vh]" />
                 </div>
-
-
             </header>
             <article className="flex  gap-4 items-center  w-full h-fit">
                 <div className="flex flex-col gap-4 items-center justify-center flex-[0.5] h-fit">
