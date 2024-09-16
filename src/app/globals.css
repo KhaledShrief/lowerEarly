@@ -7,7 +7,7 @@
   margin: auto;
   --slide-height: 10rem;
   --slide-spacing: 1rem;
-  --slide-size: 40%;
+  --slide-size: 20%;
   
 }
 .embla__viewport {
@@ -25,8 +25,8 @@
   padding-left: var(--slide-spacing);
 }
 .embla__slide img {
-  width: 650px;
-  height: 350px;
+  width: 450px;
+  height: 250px;
 }
 .embla__slide__img {
   border-radius: 1.8rem;

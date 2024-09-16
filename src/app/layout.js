@@ -41,7 +41,18 @@ export default function RootLayout({ children }) {
         <main className="w-full h-full bg-white relative  top-0 z-40">
 
           <Provider>
-            <img src="/logo-transparent-with-pic.jpg" className="w-full p-5 px-[20rem] h-[150px]" id="up" />
+            <div className="flex">
+              <div className="flex-[0.3] h-fit flex flex-col gap-2 items-center justify-center">
+
+                <Link className='text-red-500 underline' href="https://www.google.co.uk/maps/place/Reading,+Wokingham+RG6+4UT/@51.4208423,-0.9268754,18z/data=!3m1!4b1!4m2!3m1!1s0x4876835bc39c1c69:0x4e5c41064d4a84d5">
+                  Click here or on the image below for directions.
+                </Link>
+                <Link href="https://www.google.co.uk/maps/place/Reading,+Wokingham+RG6+4UT/@51.4208423,-0.9268754,18z/data=!3m1!4b1!4m2!3m1!1s0x4876835bc39c1c69:0x4e5c41064d4a84d5">
+                  <img src="/location-map-380x254.jpg" alt="logo" className='h-[150px]' />
+                </Link>
+              </div>
+              <img src="/logo-transparent-with-pic.jpg" className="flex-[0.7] h-[150px]" id="up" />
+            </div>
             <NavigationBar />
             <div className="w-full bg-white ">{children}</div>
             <>

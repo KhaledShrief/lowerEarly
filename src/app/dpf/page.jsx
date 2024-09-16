@@ -74,6 +74,16 @@ const Dbf = () => {
                     <ul className="flex flex-col gap-8 items-center justify-center w-full h-fit">
                         <li className="text-xl text-gray-500 font-bold">This will cause the vehicle to eventually slip into ‘Limp Mode’, and warning lights and messages will advise you to take the car to your nearest manufacturer supported dealer. Secondly the DPF may simply come to the end of its natural life. Even if you have driven plenty of motorway miles and you have been lucky to have experienced a chain of successful regenerations, a DPF will not last forever. Each ‘regeneration’ will leave a very fine layer of ash residue behind, and this will eventually become the cause of the ultimate blockage. Further forced regeneration cycles will not clear this. The units will need replacing sooner or later.</li>
                         <li className="text-xl text-gray-500 font-bold">A blocked DPF core fills the entire canister, causing the engine to work much harder than needed, in order to push the gasses through it. The more blocked it gets, the more back pressure it causes. The net result of the blockage in this instance was poor fuel economy and performance.</li>
+                        <li className="text-xl text-gray-500 font-bold">Valve Cleaning Using Valve Clean Technology</li>
+                        <li className="text-xl text-gray-500 font-bold">The TUNAP System is easy to use and quickly solves the problem without complex disassembly being needed. The microflex® 933 Valve Cleaning Granulate removes all deposits and contamination of valves using compressed air and causes no damage. Used granulate is simultaneously vacuumed off together with the dirt removed.
+
+                            microflex® 936 neutralisation solution dissolves residual granulate particles and prevents them getting into the combustion chamber.
+
+                            cleans rapidly, effectively and gently without complex disassembly being needed
+                            The product is not abrasive
+                            70% quicker and £2,000.- cheaper for the end client
+                            Does not damage health or contain any allergens
+                            Effective cleaning result with reduced risk of damage to the engine</li>
                     </ul>
 
                 </div>

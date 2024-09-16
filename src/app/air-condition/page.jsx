@@ -14,12 +14,12 @@ const AirCondition = () => {
                     <MdAir className="h-[20vh] text-yellow-400 w-[30vh]" />
                 </div>
             </header>
-            <article className="flex  gap-4 items-center  w-full h-fit">
+            <article className="flex  gap-4 items-start  w-full h-full">
                 <div className="flex flex-col gap-4 items-center justify-center flex-[0.5] h-fit">
                     <ul className="flex flex-col gap-8 items-start justify-start w-full h-fit">
                         <li className="text-xl text-gray-500 font-bold">If it’s been a few years since you had your air conditioning recharged and you’re not sure whether it’s working as effectively as it could be, why not book your vehicle in for a free air con check at Lower Earley to see if you need a recharge. An Air Con check is also included</li>
                         <li className="text-xl text-gray-500 font-bold">How much is an air con recharge?</li>
-                        <li className="text-xl text-gray-500 font-bold">The price you pay for an air conditioning recharge depends on the type of refrigerant gas your car uses. We offer an air conditioning regas service from £69.95. The vast majority of cars on the road in the UK use one of two types of refrigerant - R134A and R1234YF. If your air conditioning system requires R134A gas the cost to recharge £69.95. For vehicles that require R1234YF gas the cost is £134.95 to recharge when booked online. It is not possible to switch between gases, in fact, the port to recharge R1234YF models is different to the R134A making it impossible to refill with the incorrect gas.</li>
+                        <li className="text-xl text-gray-500 font-bold">The price you pay for an air conditioning recharge depends on the type of refrigerant gas your car uses. We offer an air conditioning regas service from £69.99 plus VAT. The vast majority of cars on the road in the UK use one of two types of refrigerant - R134A and R1234YF. If your air conditioning system requires R134A gas the cost to recharge £69.99 plus VAT. For vehicles that require R1234YF gas the cost is £129.99 plus VAT  to recharge when booked online. It is not possible to switch between gases, in fact, the port to recharge R1234YF models is different to the R134A making it impossible to refill with the incorrect gas.</li>
                         <li className="text-xl text-gray-500 font-bold">How do I know which air con gas I require?</li>
                         <li className="text-xl text-gray-500 font-bold">R134A gas is common in vehicles manufactured before 2014. All vehicles with air conditioning manufactured since 1st January 2017 include the new R1234YF air con gas which is more environmentally friendly. Since this date, manufacturers are no longer allowed to use the older R134A air con gas in a bid to reduce global warming as the old gas is believed to be more damaging to the environment. R1234YF gas was phased in by vehicle manufacturers over time so vehicles rolling off the production line between 2014 and 2016 could require either gas. To find out which type of air conditioning gas your car needs and to start a booking to have your air con gas recharged, enter your registration in the field above.</li>
 
@@ -52,8 +52,8 @@ const AirCondition = () => {
                     </ul>
 
                 </div>
-                <div className="flex-[0.5] flex justify-end h-fit">
-                    <img src="/gemy2.jpeg" className="w-full h-[350px] rounded-2xl" />
+                <div className="flex-[0.5] flex h-full">
+                    <img src="/gemy2.jpeg" className="w-full h-[450px] rounded-2xl" />
                 </div>
 
             </article>
