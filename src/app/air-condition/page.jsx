@@ -44,7 +44,7 @@ const AirCondition = () => {
 
                             Just like cars that run on petrol and diesel, both electric vehicles and hybrids will also require the air con system recharged when the refrigerant gas in the air con system needs replacing. Otherwise, the air con system in your vehicle will not operate effectively and will start to blow warm air.
 
-                            In fact, proactive maintenance of the air conditioning system is even more important here as the air con system in electric cars is also used for thermal management, that is, the cooling of components including the batteries and electric motors, which can become very hot with extended use. By cooling the battery, the air conditioning system supports effective charging processes and contributes significantly to the vehicle's performance and battery life. So regular air con maintenance is no longer just for comfort.
+                            In fact, proactive maintenance of the air conditioning system is even more important here as the air con system in electric cars is also used for thermal management, that is, the cooling of components including the batteries and electric motors, which can become very hot with extended use. By cooling the battery, the air conditioning system supports effective charging processes and contributes significantly to the vehicle&apos;s performance and battery life. So regular air con maintenance is no longer just for comfort.
 
                             In almost all hybrid and electric vehicles, the air conditioning system is also responsible for the Thermal Management of the battery to maintain maximum efficiency and prevent battery damage.
 
