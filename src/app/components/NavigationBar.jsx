@@ -12,6 +12,7 @@ import { MdAir } from "react-icons/md";
 import { GiTyre } from "react-icons/gi";
 import { FaCarBurst } from "react-icons/fa6";
 import { TbCarTurbine } from "react-icons/tb";
+import { CgSoftwareDownload } from "react-icons/cg";
 
 
 const NavigationBar = () => {
@@ -151,6 +152,15 @@ const NavigationBar = () => {
 
                             Injector Testing
 
+                        </DropdownItem>
+                        <DropdownItem
+                            key="software"
+                            className="text-white"
+                            description="ACME scales apps to meet user demand, automagically, based on load."
+                            startContent={<CgSoftwareDownload className="w-5 h-5" />}
+                            href="/software"
+                        >
+                            Software
                         </DropdownItem>
 
                     </DropdownMenu>
