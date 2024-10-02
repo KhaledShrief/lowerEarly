@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Build Your First Web Developer Portfolio Website</title>
+<link rel="stylesheet" href="/blog/assets/built/screen.css?v=bc77caee98">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i,800">
+
+<script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+<script>
+        if (localStorage.getItem('alto_dark') == 'true') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+<script>
+        var ghosthunter_key = '';
+        ghost_root_url = "";
+        if (document.URL.includes('creative-tim.com')) {
+            ghost_root_url = "/blog/ghost/api/v4";
+            ghosthunter_key = 'b431b45a35fd006e8befdf8855';
+        } else {
+            ghost_root_url = "/blog/ghost/api/v4";
+            ghosthunter_key = '1c87ec6f195f4f728fc5e5d522';
+        }
+    </script>
+<script>
+        var gh_white_logo = 'https://s3.amazonaws.com/creativetim_bucket/static-assets/logo-ct-blog-white.png';
+    </script>
+
+<style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+    h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+    (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+    {'GTM-K9BGS8K':true});</script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-46172202-22', 'auto', {allowLinker: true});
+    ga('set', 'anonymizeIp', true);
+    ga('require', 'GTM-K9BGS8K');
+    ga('require', 'displayfeatures');
+    ga('require', 'linker');
+    ga('linker:autoLink', ["2checkout.com","avangate.com"]);
+</script>
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NKDMSK6');</script>
+
+<meta name="description" content="To help you build an eye-grabbing web developer portfolio, we&#x27;ve put together a series of advice, resources, and examples to get you started." />
+<link rel="icon" href="/blog/favicon.png" type="image/png" />
+<link rel="canonical" href="https://www.creative-tim.com/blog/education/web-developer-portfolio-website/" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+<link rel="amphtml" href="https://www.creative-tim.com/blog/education/web-developer-portfolio-website/amp/" />
+<meta property="og:site_name" content="Creative Tim&#x27;s Blog - Fully coded design resources for web developers" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How to Build Your First Web Developer Portfolio Website" />
+<meta property="og:description" content="To help you build an eye-grabbing web developer portfolio, we&#x27;ve put together a series of advice, resources, and examples to get you started." />
+<meta property="og:url" content="https://www.creative-tim.com/blog/education/web-developer-portfolio-website/" />
+<meta property="og:image" content="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/web_developer_portfolio_website.jpg" />
+<meta property="article:published_time" content="2021-06-22T09:22:57.000Z" />
+<meta property="article:modified_time" content="2023-03-27T13:23:03.000Z" />
+<meta property="article:tag" content="Education" />
+<meta property="article:tag" content="Entrepreneurship" />
+<meta property="article:tag" content="portfolio website" />
+<meta property="article:tag" content="user experience" />
+<meta property="article:tag" content="web developer portfolio website" />
+<meta property="article:tag" content="Web Development" />
+<meta property="article:tag" content="web development portfolio website" />
+<meta property="article:tag" content="Website Development" />
+<meta property="article:publisher" content="https://www.facebook.com/ghost" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="How to Build Your First Web Developer Portfolio Website" />
+<meta name="twitter:description" content="To help you build an eye-grabbing web developer portfolio, we&#x27;ve put together a series of advice, resources, and examples to get you started." />
+<meta name="twitter:url" content="https://www.creative-tim.com/blog/education/web-developer-portfolio-website/" />
+<meta name="twitter:image" content="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/web_developer_portfolio_website.jpg" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Ana Predescu" />
+<meta name="twitter:label2" content="Filed under" />
+<meta name="twitter:data2" content="Education, Entrepreneurship, portfolio website, user experience, web developer portfolio website, Web Development, web development portfolio website, Website Development" />
+<meta name="twitter:site" content="@ghost" />
+<meta property="og:image:width" content="3446" />
+<meta property="og:image:height" content="2419" />
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Creative Tim&#x27;s Blog - Fully coded design resources for web developers",
+        "url": "https://blogct.creative-tim.com/blog/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://blogct.creative-tim.com/blog/content/images/2022/04/logo-creative-tim-black.png"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Ana Predescu",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://blogct.creative-tim.com/blog/content/images/2021/06/ppic.jpeg",
+            "width": 1440,
+            "height": 1440
+        },
+        "url": "https://blogct.creative-tim.com/blog/author/ana-predescucreative-tim-com/",
+        "sameAs": []
+    },
+    "headline": "How to Build Your First Web Developer Portfolio Website",
+    "url": "https://blogct.creative-tim.com/blog/education/web-developer-portfolio-website/",
+    "datePublished": "2021-06-22T09:22:57.000Z",
+    "dateModified": "2023-03-27T13:23:03.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/web_developer_portfolio_website.jpg",
+        "width": 3446,
+        "height": 2419
+    },
+    "keywords": "Education, Entrepreneurship, portfolio website, user experience, web developer portfolio website, Web Development, web development portfolio website, Website Development",
+    "description": "There’s no bigger website challenge than how to build your own web developer\nportfolio. Apart from making sure you create a fully functional, well-designed\nwebsite, you also need to advertise your services in a creative way.\n\nEven though you’re passionate about the web development profession, promoting\nyour services may not come naturally to you. However, making your web developer\nportfolio stand out is not such a daunting task as it may seem at first glance.\n\nTo help you build an eye-grabbing p",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://blogct.creative-tim.com/blog/"
+    }
+}
+    </script>
+<meta name="generator" content="Ghost 4.7" />
+<link rel="alternate" type="application/rss+xml" title="Creative Tim&#x27;s Blog - Fully coded design resources for web developers" href="https://www.creative-tim.com/blog/rss/" />
+<style>
+  .kg-image,
+  .aligncenter,
+  .size-large {
+	border-radius: 16px !important;
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
+<link rel="preconnect" href="https://H5FHEK3TTR-dsn.algolia.net" crossorigin /><style>:root {--ghost-accent-color: #00BBFF;}</style>
+</head>
+<body class="post-template tag-education tag-entrepreneurship tag-portfolio-website tag-user-experience tag-web-developer-portfolio-website tag-web-development tag-web-development-portfolio-website tag-website-development">
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+ <div class="site">
+<header class="site-header container" id="navbar">
+<div class="navbar">
+<div class="navbar-left">
+<div class="burger hidden-lg hidden-xl absolute lg:relative right-1"></div>
+<a class="logo" href="https://www.creative-tim.com/" target="_blank">
+<img class="logo-image" src="https://www.creative-tim.com/blog/content/images/2022/04/logo-creative-tim-black.png" alt="Creative Tim">
+</a>
+<div class="sep hidden-xs hidden-sm hidden-sm"></div>
+<a class href="https://www.creative-tim.com/blog">
+<span class="logo-text ml-4 md:ml-0 hidden md:block">Blog</span>
+</a> </div>
+<div class="navbar-right">
+<div id="docsearch" class="w-12 md:w-32 lg:w-44 rounded-sm sm:mr-7 lg:mr-0 ml-0 md:ml-4"></div>
+<nav class="main-menu hidden-xs hidden-sm hidden-md">
+<ul class="nav-list u-plain-list">
+<li class="menu-item menu-item-home">
+<a class="menu-item-link" href="https://www.creative-tim.com/blog/">
+Home
+</a>
+</li>
+<li class="menu-item menu-item-marketplace">
+<a class="menu-item-link" href="https://www.creative-tim.com/">
+Marketplace
+</a>
+</li>
+<li class="menu-item menu-item-tutorials">
+<a class="menu-item-link" href="https://www.creative-tim.com/blog/tutorial/">
+Tutorials
+</a>
+</li>
+</ul>
+</nav>
+<div class="flex items-center mr-12 sm:mr-8 md:mr-6">
+<div class="toggle-track">
+<div class="toggle-moon"><i class="icon icon-brightness-2"></i></div>
+<div class="toggle-sun"><i class="icon icon-white-balance-sunny"></i></div>
+<div class="toggle-thumb"></div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="container mt-6">
+<nav class="mb-8 md:mb-4 hidden md:block md:flex md:overflow-scroll md:items-center md:justify-between nav-secondary">
+<ul class="nav-list u-plain-list whitespace-nowrap sm:overflow-auto lg:overflow-hidden pb-4">
+<li class="menu-item menu-item-web-design">
+<a class="menu-item-link" href="https://www.creative-tim.com/blog/resources/">
+Resources
+</a>
+</li>
+<li class="menu-item menu-item-web-design">
+<a class="menu-item-link" href="https://www.creative-tim.com/blog/seo/">
+SEO
+</a>
+</li>
+<li class="menu-item menu-item-web-design">
+<a class="menu-item-link" href="https://www.creative-tim.com/blog/startups/">
+Startups
+</a>
+</li>
+<li class="menu-item menu-item-web-design">
+<a class="menu-item-link" href="https://www.creative-tim.com/blog/uiux-design/">
+UI/UX Design
+</a>
+</li>
+<li class="menu-item menu-item-web-design">
+<a class="menu-item-link" href="https://www.creative-tim.com/blog/web-design/">
+Web Design
+</a>
+</li>
+<li class="menu-item menu-item-web-design">
+<a class="menu-item-link" href="https://www.creative-tim.com/blog/web-development/">
+Web Development
+</a>
+</li>
+<li class="menu-item menu-item-web-design">
+<a class="menu-item-link" href="https://www.creative-tim.com/blog/tiktok-learning/">
+TikTok Learning
+</a>
+</li>
+<li class="menu-item menu-item-web-design">
+<a class="menu-item-link" href="https://www.creative-tim.com/blog/educational-tech/">
+Educational Tech
+</a>
+</li>
+<li class="menu-item menu-item-web-design">
+<a class="menu-item-link" href="https://www.creative-tim.com/blog/web-3-0/">
+Web 3
+</a>
+</li>
+<li class="menu-item menu-item-web-design">
+<a class="menu-item-link" href="https://www.creative-tim.com/blog/crypto-news/">
+Crypto News
+</a>
+</li>
+<li class="menu-item menu-item-web-design">
+<a class="menu-item-link" href="https://www.creative-tim.com/blog/blockchain/">
+Blockchain
+</a>
+</li>
+<li class="menu-item menu-item-web-design">
+<a class="menu-item-link" href="https://www.creative-tim.com/blog/nft/">
+NFT
+</a>
+</li>
+</ul>
+</nav>
+</div> <div class="site-content container">
+<div class="row ">
+<div class="content-column col-xl-9 col-lg-9">
+<div class="content-area">
+<main class="site-main">
+<article class="post tag-education tag-entrepreneurship tag-portfolio-website tag-user-experience tag-web-developer-portfolio-website tag-web-development tag-web-development-portfolio-website tag-website-development featured single-post">
+<header class="post-header big-title container medium">
+<h1 class="post-title">How to Build Your First Web Developer Portfolio Website</h1>
+<div class="post-meta">
+<div class="d-block mb-4">
+<span class="post-meta-item post-meta-tags">
+<a class="post-tag post-tag-education" href="https://www.creative-tim.com/blog/education/" title="Education">Education</a>
+</span>
+<span class="post-meta-item post-meta-length">
+8 min read
+</span>
+</div>
+<span class="post-meta-item post-meta-date">
+Updated:
+<time datetime="2023-03-27">
+Mar 27, 2023
+</time>
+</span>
+<span class="post-meta-item post-meta-date">
+Published:
+<time datetime="2021-06-22">
+Jun 22, 2021
+</time>
+</span>
+</div>
+</header> <div class="post-media container large">
+<div class="u-placeholder horizontal">
+<a class="post-image-link" href="/blog/education/web-developer-portfolio-website/">
+<img class="post-image lazyload u-object-fit" data-srcset="/blog/content/images/size/w400/wordpress/2021/06/web_developer_portfolio_website.jpg 400w, /blog/content/images/size/w750/wordpress/2021/06/web_developer_portfolio_website.jpg 750w, /blog/content/images/size/w960/wordpress/2021/06/web_developer_portfolio_website.jpg 960w, /blog/content/images/size/w1140/wordpress/2021/06/web_developer_portfolio_website.jpg 1140w, /blog/content/images/size/w1920/wordpress/2021/06/web_developer_portfolio_website.jpg 1920w" data-sizes="auto" src="/blog/content/images/size/w960/wordpress/2021/06/web_developer_portfolio_website.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="How to Build Your First Web Developer Portfolio Website">
+</a>
+</div>
+</div>
+<div class="post-content kg-canvas u-text-format">
+<p><span style="font-weight: 400;">There&#8217;s no bigger website challenge than how to build your own web developer portfolio. Apart from making sure you create a fully functional, well-designed website, you also need to advertise your services in a creative way. </span></p>
+<p><span style="font-weight: 400;">Even though you&#8217;re passionate about the web development profession, promoting your services may not come naturally to you. However, making your web developer portfolio stand out is not such a daunting task as it may seem at first glance.</span></p>
+<p><span style="font-weight: 400;">To help you build an eye-grabbing portfolio, we&#8217;ve put together a series of advice, resources, and examples to get you started. Keep on reading to discover them and learn how to build your web developer portfolio!</span></p>
+<h2><span style="font-weight: 400;">What is a web developer portfolio website?</span></h2>
+<p><span style="font-weight: 400;">A web portfolio website is a website that you build to showcase your web development projects and skills to impress potential employers or clients.</span></p>
+<p><span style="font-weight: 400;">The website itself stands as proof of your web developer capabilities, so you want to impress visitors with your code and design. This is a personal project, so you can take creative liberties and experiment with it. </span></p>
+<p><span style="font-weight: 400;">An eye-grabbing and well-thought portfolio website will make your users want to spend more time on it and convince employers or potential clients that your services are worth contracting.</span></p>
+<h2><span style="font-weight: 400;">What to put on your web developer portfolio website?</span></h2>
+<p>If you want to learn how to build your web developer portfolio, you need to understand what elements your website-portfolio should include:</p>
+<p><b>Must-have</b></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Bio/About me </span></li>
+</ul>
+<p><span style="font-weight: 400;">You want prospective clients or employers to get to know you. Don&#8217;t write a long entry and only include relevant details. Talk briefly about your educational background, skills, and experience, but also include personal information such as hobbies or interests. Let your personality shine through and give the text a personal touch.</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Projects and code</span></li>
+</ul>
+<p>This section has the most potential to convince people to hire your freelancing services or employ you in a company. Showcase projects and code you&#8217;ve written so far, whether it&#8217;s personal projects or professional ones. If you don&#8217;t have any just yet, try your hand at building something like a plugin, a website, or a game.</p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Technical skills and soft skills</span></li>
+</ul>
+<p><span style="font-weight: 400;">Both technical and soft skills are essential for a web developer. Display only the best skills from the two categories on your website portfolio. Check job listings to make sure you emphasize the required skills for the web development positions you are targeting. </span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Easy to find contact info</span></li>
+</ul>
+<p><span style="font-weight: 400;">The whole point of having a web development portfolio is for people to hire your services. To do that, they need to be able to reach you. Place your email address in an easy-to-see spot on your website to make it easy for users to find it and contribute to good UX.</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Github </span></li>
+</ul>
+<p><span style="font-weight: 400;">Potential employers or clients will want to see your written code. Add a Github link on your portfolio website to make it easy for them to access your Github repositories. It&#8217;d be helpful also to provide context for the code in the readme.md files.</span></p>
+<p><b>Nice to have</b></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Photo</span></li>
+</ul>
+<p><span style="font-weight: 400;">Sometimes people want to put a face to a name. Adding your photograph to your web developer portfolio will make you seem more real and relatable as well as more professional. Since this is not a formal resume, you don&#8217;t necessarily need to use the standard headshot picture.</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Education</span></li>
+</ul>
+<p><span style="font-weight: 400;">If you have a degree in Computer Science or any other related field, you should mention it on your portfolio website. Avoid listing degrees in areas unrelated to web development because they are irrelevant to potential employers or clients.</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Social media handles</span></li>
+</ul>
+<p><span style="font-weight: 400;">List your most important social media profiles such as Linked, Facebook, and Twitter. Looking at your social media accounts will help potential employers better understand your personality beyond the bio or about me information you provide on your portfolio website.</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Downloadable resume</span></li>
+</ul>
+<p><span style="font-weight: 400;">Some employers or HR recruiters might want to look at your formal resume. Rather than having them ask you for one, you could add a download link for the resume on your portfolio website.</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Awards and special recognition</span></li>
+</ul>
+<p><span style="font-weight: 400;"> If you have received awards or special recognition for your web development work, you should definitely add them to your website portfolio. Include here relevant and impressive achievements such as writing for renowned tech blogs, hackathon wins, or participating in web development conferences.</span></p>
+<h2><span style="font-weight: 400;">Tips on how to build a web development portfolio website</span></h2>
+<h2><b style="font-size: 16px;">1. Make your website look good</b></h2>
+<p><span style="font-weight: 400;">You may not be a web designer, but your portfolio website should look great nonetheless. Make sure you don&#8217;t neglect this aspect because your website&#8217;s design is the first thing that users notice. You can use a free or paid UI kit or a website builder to make sure you achieve a great look. You can even hire a designer if you have the financial resources to do so.</span></p>
+<p><a href="https://jacekjeznach.com/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Jacek Jeznach&#8217;s portfolio</span></a><span style="font-weight: 400;"> is merely one of the many stunning web developer portfolio websites out there.</span></p>
+<p><a href="https://jacekjeznach.com/" target="_blank" rel="noopener noreferrer"><img loading="lazy" class="aligncenter wp-image-12460" src="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/Jacek_Jeznach-1024x640.png" alt="how to build a web developer portfolio" width="800" height="500" srcset="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/Jacek_Jeznach-1024x640.png 1024w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/Jacek_Jeznach-300x188.png 300w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/Jacek_Jeznach-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></a><b></b></p>
+<p><b>2. State clearly what you do</b></p>
+<p><span style="font-weight: 400;">As soon as users land on your homepage, they should be able to tell immediately what your website is about. Make sure your homepage has a brief text that lets users know you are a web developer, and this is your portfolio website. Making things clear and simple for users ensures they won&#8217;t leave your website as soon as they arrive.</span></p>
+<p><span style="font-weight: 400;">Web developer and UX/UI Designer </span><a href="https://bepatrickdavid.com/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Patrick David&#8217;s portfolio website</span></a><span style="font-weight: 400;"> is an excellent example of how to do this right. It is clear from the get-go what his website is about.</span></p>
+<p><a href="https://bepatrickdavid.com/" target="_blank" rel="noopener noreferrer"><img loading="lazy" class="aligncenter wp-image-12461" src="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/patrick_david-1024x640.png" alt="patrick david" width="800" height="500" srcset="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/patrick_david-1024x640.png 1024w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/patrick_david-300x188.png 300w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/patrick_david-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></a><b></b></p>
+<p><b>3. </b><b>Ensure great user experience</b></p>
+<p><span style="font-weight: 400;">User experience is important for any website, and a portfolio website makes no exception. Your website should provide value for visitors and try to fulfill their needs. Setting up a clear path for them helps you get them to the point you desire, contacting you to inquire about your services. You can achieve good UX by using conventions, having a consistent typography hierarchy, making clickable links obvious, and so on.</span></p>
+<p><a href="https://www.ybrikman.com/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Yevgeniy Brikman&#8217;s portfolio website</span></a><span style="font-weight: 400;"> is the perfect example of good UX. He makes excellent use of conventions and makes it extremely easy for the user to navigate his website.</span></p>
+<p><a href="https://www.ybrikman.com/" target="_blank" rel="noopener noreferrer"><img loading="lazy" class="aligncenter wp-image-12462" src="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/Yevgeniy_Brikman-1024x640.png" alt="Yevgeniy Brikman" width="800" height="500" srcset="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/Yevgeniy_Brikman-1024x640.png 1024w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/Yevgeniy_Brikman-300x188.png 300w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/Yevgeniy_Brikman-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></a><b></b></p>
+<p><b>4. Get creative with your portfolio</b></p>
+<p><span style="font-weight: 400;">Your web developer portfolio website is your personal space. It offers you a chance to get creative with your presentation and impress potential employers/clients. Forget about the classic resume format: keep the essential information but make it your own.</span></p>
+<p><a href="https://caferati.me/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Rafael Caferati&#8217;s web developer portfolio</span></a><span style="font-weight: 400;"> uses the gamification trend to its highest potential. This full-stack developer has turned his portfolio homepage into a game that captivates users and makes them want to see more of his website.</span></p>
+<p><a href="https://caferati.me/" target="_blank" rel="noopener noreferrer"><img loading="lazy" class="aligncenter wp-image-12463" src="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/Rafael_Caferati-1024x640.png" alt width="800" height="500" srcset="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/Rafael_Caferati-1024x640.png 1024w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/Rafael_Caferati-300x188.png 300w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/Rafael_Caferati-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></a><b></b></p>
+<p><b>5. Optimize it for search engines</b></p>
+<p><span style="font-weight: 400;">Your portfolio website&#8217;s purpose is to get your work in front of the right people, and there is no better way to do this than by search engine optimization. Adding relevant keywords to your web developer portfolio will lead to it being displayed amongst the top results on google search result pages and help you get traffic.</span></p>
+<p><span style="font-weight: 400;">You can optimize any website easily if you follow </span><a href="https://dev.to/rossellafer/seo-tips-for-your-developer-portfolio-26fm" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">a few simple SEO tips</span></a><span style="font-weight: 400;">, like adding meta tags, having descriptive alt attributes for images, and adding relevant keywords to your content. Check out Emily Ridge&#8217;s portfolio website below to get an idea of optimized content.</span></p>
+<p><a href="https://www.emilyridge.ie/" target="_blank" rel="noopener noreferrer"><img loading="lazy" class="aligncenter wp-image-12464 size-large" src="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/emily_ridge-1024x640.png" alt="emily ridge" width="730" height="456" srcset="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/emily_ridge-1024x640.png 1024w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/emily_ridge-300x188.png 300w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/emily_ridge-768x480.png 768w" sizes="(max-width: 730px) 100vw, 730px" /></a></p>
+<h2><span style="font-weight: 400;">Web developer portfolio website templates and resources</span></h2>
+<p><strong>1. <a href="https://www.creative-tim.com/product/soft-ui-design-system" target="_blank" rel="noopener noreferrer">Soft UI Design System</a></strong></p>
+<p><a href="https://www.creative-tim.com/product/soft-ui-design-system" target="_blank" rel="noopener noreferrer"><img loading="lazy" class="aligncenter wp-image-12465 size-full" src="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/Soft_UI_Design_System.jpeg" alt="Soft UI Design System" width="800" height="600" srcset="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/Soft_UI_Design_System.jpeg 800w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/Soft_UI_Design_System-300x225.jpeg 300w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/Soft_UI_Design_System-768x576.jpeg 768w" sizes="(max-width: 800px) 100vw, 800px" /></a></p>
+<p><span style="font-weight: 400;"><a href="https://www.creative-tim.com/product/soft-ui-design-system" target="_blank" rel="noopener noreferrer">Soft UI Design System</a> by Creative Tim is a stunning Bootstrap 5 UI kit that combines gradients, bold colors, and realistic textures. It comes with 70 handcrafted elements and 4 example pages, and it&#8217;s the perfect choice to create a first web development portfolio website with stunning design.</span></p>
+<p><strong>2. <a href="https://www.creative-tim.com/builder/argon" target="_blank" rel="noopener noreferrer">Argon Low Code Builder</a></strong></p>
+<p><a href="https://www.creative-tim.com/builder/argon" target="_blank" rel="noopener noreferrer"><img loading="lazy" class="aligncenter wp-image-12466" src="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/argon_low_code_builder-300x225.jpeg" alt="Argon Low Code Builder" width="800" height="600" srcset="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/argon_low_code_builder-300x225.jpeg 300w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/argon_low_code_builder-768x576.jpeg 768w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/argon_low_code_builder-1024x768.jpeg 1024w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/argon_low_code_builder.jpeg 1600w" sizes="(max-width: 800px) 100vw, 800px" /></a></p>
+<p><span style="font-weight: 400;"><a href="https://www.creative-tim.com/builder/argon" target="_blank" rel="noopener noreferrer">Argon Low Code Builder</a> is a drag-and-drop website builder that will help you speed up the development process of your website portfolio. All you have to do is choose from 50 unique blocks, customize colors and fonts, and download the source code. Simple as that!</span></p>
+<p><strong>3. <a href="https://www.creative-tim.com/product/material-kit-pro" target="_blank" rel="noopener noreferrer">Material Kit PRO</a></strong></p>
+<p><a href="https://www.creative-tim.com/product/material-kit-pro" target="_blank" rel="noopener noreferrer"><img loading="lazy" class="aligncenter wp-image-12467 size-full" src="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/Material_Kit_PRO.jpeg" alt="Material Kit PRO" width="800" height="600" srcset="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/Material_Kit_PRO.jpeg 800w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/Material_Kit_PRO-300x225.jpeg 300w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/Material_Kit_PRO-768x576.jpeg 768w" sizes="(max-width: 800px) 100vw, 800px" /></a></p>
+<p><span style="font-weight: 400;"><a href="https://www.creative-tim.com/product/material-kit-pro" target="_blank" rel="noopener noreferrer">Material Kit PRO</a> is a premium Bootstrap 4 UI kit inspired by Google&#8217;s Material Design. It comes with over 1000 components and 11 example pages that will help you kickstart your portfolio website. This sleek UI kit will help you impress anyone that comes across your portfolio website.</span></p>
+<p><strong>4. <a href="https://uideck.com/templates/freelancer/" target="_blank" rel="noopener noreferrer">Freelancer – CV, Resume, And Portfolio HTML Template </a></strong></p>
+<p><a href="https://uideck.com/templates/freelancer/" target="_blank" rel="noopener noreferrer"><img loading="lazy" class="aligncenter wp-image-12468" src="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/Freelancer_web_template-300x176.jpeg" alt="Freelancer web template" width="800" height="468" srcset="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/Freelancer_web_template-300x176.jpeg 300w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/Freelancer_web_template-768x450.jpeg 768w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/Freelancer_web_template.jpeg 820w" sizes="(max-width: 800px) 100vw, 800px" /></a></p>
+<p><span style="font-weight: 400;">Freelancer is a Bootstrap 4 template that was created with a portfolio website in mind. It has a simple and clean design with sections such as about, services, skill bars, client testimonials, and so on. Freelancer template is easy to customize and fully responsive.</span></p>
+<p><strong>5. <a href="https://www.creative-tim.com/product/blk-design-system-pro-react" target="_blank" rel="noopener noreferrer">BLK• Design System PRO React</a></strong></p>
+<p><a href="https://www.creative-tim.com/product/blk-design-system-pro-react" target="_blank" rel="noopener noreferrer"><img loading="lazy" class="aligncenter wp-image-12469 size-full" src="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/BLK_Design_System_PRO_React.jpeg" alt="BLK Design System PRO React" width="800" height="600" srcset="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/BLK_Design_System_PRO_React.jpeg 800w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/BLK_Design_System_PRO_React-300x225.jpeg 300w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/BLK_Design_System_PRO_React-768x576.jpeg 768w" sizes="(max-width: 800px) 100vw, 800px" /></a></p>
+<p><span style="font-weight: 400;"><a href="https://www.creative-tim.com/product/blk-design-system-pro-react" target="_blank" rel="noopener noreferrer">BLK• Design System PRO React</a> is a premium design system built for Bootstrap 4. Its design is easy on the eye and combines dark shades and bright colors. It comes with 1100 handcrafted elements and 17 prebuilt example pages that you can use to build an elegant website portfolio in no time!</span></p>
+<h2><span style="font-weight: 400;">Web developer portfolio website examples to inspire you</span></h2>
+<p><span style="font-weight: 400;">Near the end, we want to share with you some cool web development website portfolio we stumbled upon, as we&#8217;re sure they will inspire you when you create your own.</span></p>
+<p><strong>1. <a href="https://www.adhamdannaway.com/" target="_blank" rel="noopener noreferrer">Adham Dannaway</a></strong></p>
+<p><a href="https://www.adhamdannaway.com/" target="_blank" rel="noopener noreferrer"><img loading="lazy" class="aligncenter wp-image-12471" src="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/Adham_Dannaway-300x188.png" alt="Adham Dannaway" width="800" height="500" srcset="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/Adham_Dannaway-300x188.png 300w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/Adham_Dannaway-768x480.png 768w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/Adham_Dannaway-1024x640.png 1024w" sizes="(max-width: 800px) 100vw, 800px" /></a></p>
+<p><strong>2. <a href="https://jonny.me/" target="_blank" rel="noopener noreferrer">Jonny MacEachern</a></strong></p>
+<p><a href="https://jonny.me/" target="_blank" rel="noopener noreferrer"><img loading="lazy" class="aligncenter wp-image-12473" src="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/Jonny_MacEachern-300x188.png" alt="Jonny MacEachern" width="800" height="500" srcset="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/Jonny_MacEachern-300x188.png 300w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/Jonny_MacEachern-768x480.png 768w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/Jonny_MacEachern-1024x640.png 1024w" sizes="(max-width: 800px) 100vw, 800px" /></a></p>
+<p><strong>3. <a href="https://findmatthew.com/" target="_blank" rel="noopener noreferrer">Matthew Williams</a></strong></p>
+<p><a href="https://findmatthew.com/" target="_blank" rel="noopener noreferrer"><img loading="lazy" class="aligncenter wp-image-12474" src="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/Matthew_Williams-300x188.png" alt="Matthew Williams" width="800" height="500" srcset="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/Matthew_Williams-300x188.png 300w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/Matthew_Williams-768x480.png 768w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/Matthew_Williams-1024x640.png 1024w" sizes="(max-width: 800px) 100vw, 800px" /></a></p>
+<p><strong>4. <a href="https://olaolu.dev/" target="_blank" rel="noopener noreferrer">Olaolu Olawuyi</a></strong></p>
+<p><a href="https://olaolu.dev/" target="_blank" rel="noopener noreferrer"><img loading="lazy" class="aligncenter wp-image-12475" src="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/Olaolu_Olawuyi-300x188.png" alt="Olaolu Olawuyi" width="800" height="500" srcset="https://www.creative-tim.com/blog/content/images/wordpress/2021/06/Olaolu_Olawuyi-300x188.png 300w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/Olaolu_Olawuyi-768x480.png 768w, https://blogct.creative-tim.com/blog/content/images/wordpress/2021/06/Olaolu_Olawuyi-1024x640.png 1024w" sizes="(max-width: 800px) 100vw, 800px" /></a></p>
+<h2><span style="font-weight: 400;">Final Thoughts</span></h2>
+<p><span style="font-weight: 400;">We hope you are now ready to take on the challenge of building your first web development portfolio website. Follow our tips, and you&#8217;re going to create a fantastic portfolio website that will get you leads.</span></p>
+<p><span style="font-weight: 400;">If you want to make sure your portfolio website has a consistent design with elements that fit together perfectly, take a look at our </span><a href="https://www.creative-tim.com/templates/ui-kit" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">UI kits</span></a><span style="font-weight: 400;"> and get building!</span></p>
+
+</div>
+<div class="container medium">
+<span class="post-meta-item post-meta-tags">
+<a class="post-tag post-tag-education" href="/blog/education/" title="Education">Education</a>
+<a class="post-tag post-tag-entrepreneurship" href="/blog/entrepreneurship/" title="Entrepreneurship">Entrepreneurship</a>
+<a class="post-tag post-tag-portfolio-website" href="/blog/portfolio-website/" title="portfolio website">portfolio website</a>
+<a class="post-tag post-tag-user-experience" href="/blog/user-experience/" title="user experience">user experience</a>
+<a class="post-tag post-tag-web-developer-portfolio-website" href="/blog/web-developer-portfolio-website/" title="web developer portfolio website">web developer portfolio website</a>
+<a class="post-tag post-tag-web-development" href="/blog/web-development/" title="Web Development">Web Development</a>
+<a class="post-tag post-tag-web-development-portfolio-website" href="/blog/web-development-portfolio-website/" title="web development portfolio website">web development portfolio website</a>
+<a class="post-tag post-tag-website-development" href="/blog/website-development/" title="Website Development">Website Development</a>
+</span>
+<div class="share u-hover-wrapper">
+<a class="share-item share-facebook u-hover-item" href="https://www.facebook.com/sharer.php?u=https://www.creative-tim.com/blog/education/web-developer-portfolio-website/" target="_blank" rel="noopener"><i class="icon icon-facebook"></i></a>
+<a class="share-item share-twitter u-hover-item" href="https://twitter.com/intent/tweet?url=https://www.creative-tim.com/blog/education/web-developer-portfolio-website/&text=How%20to%20Build%20Your%20First%20Web%20Developer%20Portfolio%20Website" target="_blank" rel="noopener"><i class="icon icon-twitter"></i></a>
+<a class="share-item share-pinterest u-hover-item" href="https://pinterest.com/pin/create/button/?url=https://www.creative-tim.com/blog/education/web-developer-portfolio-website/&media=&description=How%20to%20Build%20Your%20First%20Web%20Developer%20Portfolio%20Website" target="_blank" rel="noopener" data-pin-do="none"><i class="icon icon-pinterest"></i></a>
+<a class="share-item share-linkedin u-hover-item" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.creative-tim.com/blog/education/web-developer-portfolio-website/&title=How%20to%20Build%20Your%20First%20Web%20Developer%20Portfolio%20Website" target="_blank" rel="noopener"><i class="icon icon-linkedin"></i></a>
+<a class="share-item share-reddit u-hover-item" href="https://reddit.com/submit?url=https://www.creative-tim.com/blog/education/web-developer-portfolio-website/&title=How%20to%20Build%20Your%20First%20Web%20Developer%20Portfolio%20Website" target="_blank" rel="noopener"><i class="icon icon-reddit"></i></a>
+<a class="share-item share-pocket u-hover-item" href="https://getpocket.com/edit?url=https://www.creative-tim.com/blog/education/web-developer-portfolio-website/" target="_blank" rel="noopener"><i class="icon icon-pocket"></i></a>
+</div> <section class="author">
+<div class="author-image-placeholder u-placeholder">
+<img class="author-image lazyload u-object-fit" data-srcset="/blog/content/images/size/w150/2021/06/ppic.jpeg" src="/blog/content/images/size/w150/2021/06/ppic.jpeg" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Ana Predescu">
+</div>
+<div class="author-wrapper">
+<header class="author-header">
+<div class="author-header-wrapper">
+<h4 class="author-name">Ana Predescu</h4>
+<div class="author-social">
+<a class="author-social-item author-more" href="/blog/author/ana-predescucreative-tim-com/">More posts</a>
+</div>
+</div>
+</header>
+<div class="author-bio"></div>
+</div>
+</section>
+</div>
+</article>
+<div class="navigation container medium">
+<div class="navigation-item navigation-previous">
+<a class="navigation-item-link button-arrow button-arrow-left" href="/blog/web-development/become-full-stack-developer/">
+<i class="button-arrow-icon icon icon-arrow-left"></i> Previous Post
+</a>
+</div>
+<div class="navigation-item navigation-next">
+<a class="navigation-item-link button-arrow button-arrow-right" href="/blog/web-design/complex-innovative-admin/">
+Next Post <i class="button-arrow-icon icon icon-arrow-right"></i>
+</a>
+</div>
+</div> <section class="related-posts container medium">
+<h3 class="related-title"><span class="text">You might also like...</span></h3>
+<div class="row">
+<div class="col-md-4 related-column">
+<article class="post tag-education tag-blog-tag tag-seo-tools tag-tips">
+<div class="post-media">
+<div class="u-placeholder rectangle">
+<a class="post-image-link" href="/blog/education/your-own-project-tools-that-will-help-build-a-blog/">
+<img class="post-image lazyload u-object-fit" data-srcset="/blog/content/images/size/w400/wordpress/2018/11/rawpixel-558597-unsplash.jpg 400w, /blog/content/images/size/w750/wordpress/2018/11/rawpixel-558597-unsplash.jpg 750w, /blog/content/images/size/w960/wordpress/2018/11/rawpixel-558597-unsplash.jpg 960w, /blog/content/images/size/w1140/wordpress/2018/11/rawpixel-558597-unsplash.jpg 1140w, /blog/content/images/size/w1920/wordpress/2018/11/rawpixel-558597-unsplash.jpg 1920w" data-sizes="auto" src="/blog/content/images/size/w960/wordpress/2018/11/rawpixel-558597-unsplash.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Doing your own project: 9 tools that will help a student to build a blog">
+</a>
+</div>
+</div>
+<header class="post-header">
+<h2 class="post-title">
+<a class="post-title-link" href="/blog/education/your-own-project-tools-that-will-help-build-a-blog/">Doing your own project: 9 tools that will help a student to build a blog</a>
+</h2>
+<div class="post-meta">
+<div class="d-block mb-4">
+<span class="post-meta-item post-meta-tags">
+<a class="post-tag post-tag-education" href="https://www.creative-tim.com/blog/education/" title="Education">Education</a>
+</span>
+<span class="post-meta-item post-meta-length">
+4 min read
+</span>
+</div>
+<span class="post-meta-item post-meta-date">
+Updated:
+<time datetime="2022-10-03">
+Oct 3, 2022
+</time>
+</span>
+<span class="post-meta-item post-meta-date">
+Published:
+<time datetime="2021-11-18">
+Nov 18, 2021
+</time>
+</span>
+</div>
+</header> </article>
+</div>
+<div class="col-md-4 related-column">
+<article class="post tag-web-development tag-career tag-education tag-full-stack tag-full-stack-developer tag-full-stack-development tag-fullstack tag-website-development">
+<div class="post-media">
+<div class="u-placeholder rectangle">
+<a class="post-image-link" href="/blog/web-development/become-full-stack-developer/">
+<img class="post-image lazyload u-object-fit" data-srcset="/blog/content/images/size/w400/wordpress/2021/06/full-stack_developer.jpg 400w, /blog/content/images/size/w750/wordpress/2021/06/full-stack_developer.jpg 750w, /blog/content/images/size/w960/wordpress/2021/06/full-stack_developer.jpg 960w, /blog/content/images/size/w1140/wordpress/2021/06/full-stack_developer.jpg 1140w, /blog/content/images/size/w1920/wordpress/2021/06/full-stack_developer.jpg 1920w" data-sizes="auto" src="/blog/content/images/size/w960/wordpress/2021/06/full-stack_developer.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Your Guide to Becoming a Full-Stack Developer in 2021">
+</a>
+</div>
+</div>
+<header class="post-header">
+<h2 class="post-title">
+<a class="post-title-link" href="/blog/web-development/become-full-stack-developer/">Your Guide to Becoming a Full-Stack Developer in 2021</a>
+</h2>
+<div class="post-meta">
+<div class="d-block mb-4">
+<span class="post-meta-item post-meta-tags">
+<a class="post-tag post-tag-web-development" href="https://www.creative-tim.com/blog/web-development/" title="Web Development">Web Development</a>
+</span>
+<span class="post-meta-item post-meta-length">
+6 min read
+</span>
+</div>
+<span class="post-meta-item post-meta-date">
+Updated:
+<time datetime="2022-07-18">
+Jul 18, 2022
+</time>
+</span>
+<span class="post-meta-item post-meta-date">
+Published:
+<time datetime="2021-06-15">
+Jun 15, 2021
+</time>
+</span>
+</div>
+</header> </article>
+</div>
+<div class="col-md-4 related-column">
+<article class="post tag-education tag-soft-skills tag-technical-skills tag-web-developer-job tag-web-developer-skills tag-web-development">
+<div class="post-media">
+<div class="u-placeholder rectangle">
+<a class="post-image-link" href="/blog/education/web-developer-skills/">
+<img class="post-image lazyload u-object-fit" data-srcset="/blog/content/images/size/w400/wordpress/2021/06/true-agency-o4UhdLv5jbQ-unsplash.jpg 400w, /blog/content/images/size/w750/wordpress/2021/06/true-agency-o4UhdLv5jbQ-unsplash.jpg 750w, /blog/content/images/size/w960/wordpress/2021/06/true-agency-o4UhdLv5jbQ-unsplash.jpg 960w, /blog/content/images/size/w1140/wordpress/2021/06/true-agency-o4UhdLv5jbQ-unsplash.jpg 1140w, /blog/content/images/size/w1920/wordpress/2021/06/true-agency-o4UhdLv5jbQ-unsplash.jpg 1920w" data-sizes="auto" src="/blog/content/images/size/w960/wordpress/2021/06/true-agency-o4UhdLv5jbQ-unsplash.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Top 15 Skills Any Successful Web Developer Should Have">
+</a>
+</div>
+</div>
+<header class="post-header">
+<h2 class="post-title">
+<a class="post-title-link" href="/blog/education/web-developer-skills/">Top 15 Skills Any Successful Web Developer Should Have</a>
+</h2>
+<div class="post-meta">
+<div class="d-block mb-4">
+<span class="post-meta-item post-meta-tags">
+<a class="post-tag post-tag-education" href="https://www.creative-tim.com/blog/education/" title="Education">Education</a>
+</span>
+<span class="post-meta-item post-meta-length">
+6 min read
+</span>
+</div>
+<span class="post-meta-item post-meta-date">
+Updated:
+<time datetime="2021-11-03">
+Nov 3, 2021
+</time>
+</span>
+<span class="post-meta-item post-meta-date">
+Published:
+<time datetime="2021-06-07">
+Jun 7, 2021
+</time>
+</span>
+</div>
+</header> </article>
+</div>
+</div>
+</section>
+</main>
+</div>
+</div>
+<div class="sidebar-column col-xl-3 col-lg-3 hidden-xs hidden-sm hidden-md">
+<aside class="widget-area">
+<div class="widget widget-mailchimp u-shadow">
+<h4 class="widget-title">Join our newsletter</h4>
+
+<div id="mc_embed_signup">
+<form action="https://creative-tim.us3.list-manage.com/subscribe/post?u=ff98cdcf2e6a63f872c65dbfb&amp;id=3ad01d6373&amp;f_id=0092c2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<div id="mc_embed_signup_scroll">
+<input type="email" value name="EMAIL" class="required email" placeholder="Enter your email..." id="mce-EMAIL">
+<button class="button-arrow-icon" type="submit" name="subscribe" id="mc-embedded-subscribe">
+<i class="icon icon-arrow-right"></i>
+</button>
+<div id="mce-responses" class="clear">
+<div class="response" id="mce-error-response" style="display:none"></div>
+<div class="response" id="mce-success-response" style="display:none"></div>
+</div> 
+<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ff98cdcf2e6a63f872c65dbfb_3ad01d6373" tabindex="-1" value></div>
+</div>
+</form>
+</div>
+
+</div>
+<div class="widget widget-tags u-shadow">
+<h4 class="widget-title">Popuplar Tags</h4>
+<div class="tag-feed">
+<div class="tag">
+<a class="tag-link" href="/blog/web-design/">
+<span class="tag-name">web design</span>
+<span class="tag-count">376</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/blog/web-development/">
+<span class="tag-name">Web Development</span>
+<span class="tag-count">110</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/blog/tiktok-learning/">
+<span class="tag-name">TikTok Learning</span>
+<span class="tag-count">87</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/blog/crypto-news/">
+<span class="tag-name">Crypto News</span>
+<span class="tag-count">82</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/blog/educational-tech/">
+<span class="tag-name">Educational Tech</span>
+<span class="tag-count">81</span>
+</a>
+</div>
+</div>
+</div> <div class="widget widget-recent u-shadow">
+<h4 class="widget-title">Recent Posts</h4>
+<div class="recent-posts">
+<article class="recent">
+<header class="post-header">
+<h2 class="post-title">
+<a class="post-title-link" href="/blog/educational-tech/mastering-custom-animations-in-web-development/">Mastering Custom Animations In Web Development (2024)</a>
+</h2>
+<div class="post-meta">
+<div class="d-block mb-4">
+<span class="post-meta-item post-meta-length">
+13 min read
+</span>
+</div>
+<span class="post-meta-item post-meta-date">
+Updated:
+<time datetime="2024-09-19">
+a day ago
+</time>
+</span>
+<span class="post-meta-item post-meta-date">
+Published:
+<time datetime="2024-09-19">
+a day ago
+</time>
+</span>
+</div>
+</header> </article>
+<article class="recent">
+<header class="post-header">
+<h2 class="post-title">
+<a class="post-title-link" href="/blog/educational-ui-ux/website-chatbot-ui-design-examples/">10 Website Chatbot UI Design Examples with Code Included</a>
+</h2>
+<div class="post-meta">
+<div class="d-block mb-4">
+<span class="post-meta-item post-meta-length">
+4 min read
+</span>
+</div>
+<span class="post-meta-item post-meta-date">
+Updated:
+<time datetime="2024-09-19">
+2 days ago
+</time>
+</span>
+<span class="post-meta-item post-meta-date">
+Published:
+<time datetime="2024-09-18">
+2 days ago
+</time>
+</span>
+</div>
+</header> </article>
+<article class="recent">
+<header class="post-header">
+<h2 class="post-title">
+<a class="post-title-link" href="/blog/tw-components/free-tailwind-css-number-inputs/">15+ Free Tailwind CSS Number Inputs for your Projects</a>
+</h2>
+<div class="post-meta">
+<div class="d-block mb-4">
+<span class="post-meta-item post-meta-length">
+5 min read
+</span>
+</div>
+<span class="post-meta-item post-meta-date">
+Updated:
+<time datetime="2024-09-02">
+18 days ago
+</time>
+</span>
+<span class="post-meta-item post-meta-date">
+Published:
+<time datetime="2024-09-02">
+18 days ago
+</time>
+</span>
+</div>
+</header> </article>
+</div>
+</div> <div class="widget widget-recent u-shadow">
+<h4 class="widget-title">Short Coding Tutorials</h4>
+<div class="recent-posts">
+<article class="recent">
+<header class="post-header">
+<h2 class="post-title">
+<a class="post-title-link" href="/blog/tiktok-learning/tiktok-tutorial-89-how-to-create-a-gravity-button-css/">TikTok Tutorial #89 - How to create a Gravity Button with CSS</a>
+</h2>
+<div class="post-meta">
+<div class="d-block mb-4">
+<span class="post-meta-item post-meta-length">
+3 min read
+</span>
+</div>
+<span class="post-meta-item post-meta-date">
+Updated:
+<time datetime="2024-03-01">
+7 months ago
+</time>
+</span>
+<span class="post-meta-item post-meta-date">
+Published:
+<time datetime="2024-01-30">
+8 months ago
+</time>
+</span>
+</div>
+</header> </article>
+<article class="recent">
+<header class="post-header">
+<h2 class="post-title">
+<a class="post-title-link" href="/blog/tiktok-learning/tiktok-tutorial-88-how-to-create-a-payment-system/">TikTok Tutorial #88 - How to create a Payment system with CSS &amp; JS</a>
+</h2>
+<div class="post-meta">
+<div class="d-block mb-4">
+<span class="post-meta-item post-meta-length">
+6 min read
+</span>
+</div>
+<span class="post-meta-item post-meta-date">
+Updated:
+<time datetime="2024-02-14">
+7 months ago
+</time>
+</span>
+<span class="post-meta-item post-meta-date">
+Published:
+<time datetime="2024-01-30">
+8 months ago
+</time>
+</span>
+</div>
+</header> </article>
+<article class="recent">
+<header class="post-header">
+<h2 class="post-title">
+<a class="post-title-link" href="/blog/tiktok-learning/tiktok-tutorial-87-how-to-create-a-teeth-toggle/">TikTok Tutorial #87 - How to create a Teeth toggle</a>
+</h2>
+<div class="post-meta">
+<div class="d-block mb-4">
+<span class="post-meta-item post-meta-length">
+7 min read
+</span>
+</div>
+<span class="post-meta-item post-meta-date">
+Updated:
+<time datetime="2024-01-30">
+8 months ago
+</time>
+</span>
+<span class="post-meta-item post-meta-date">
+Published:
+<time datetime="2024-01-30">
+8 months ago
+</time>
+</span>
+</div>
+</header> </article>
+</div>
+</div></aside> </div>
+</div>
+</div>
+<footer class="site-footer container">
+<div>
+<a class="logo" href="https://www.creative-tim.com/" target="_blank">
+<img class="logo-image mb-5 lg:mb-32" src="https://localhost:2368/content/images/2023/02/logo-creative-tim-black.png" alt="Creative Tim">
+<img class="logo-image white mb-5 lg:mb-32" src="https://s3.amazonaws.com/creativetim_bucket/static-assets/logo-ct-blog-white.png">
+</a>
+<p class="text-sm text-gray-600 dark:text-gray-400 mb-5 lg:mb-0">
+©
+<script>document.write(new Date().getFullYear())</script><a href="https://www.creative-tim.com/" target="_blank" rel="noopener">&nbsp; Creative Tim</a>,
+made with ❤️ for a better web.
+</a>
+</p>
+</div>
+<ul class="nav block md:flex flex-row">
+<li class="text-start sm:mb-0 mb-4">
+<div>
+<h6 class="mb-4 text-sm font-semibold uppercase text-gray-600">Company</h6>
+<ul class="flex-column mr-6">
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://www.creative-tim.com/presentation" rel="nofollow" target="_blank"> About us </a>
+</li>
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://www.creative-tim.com/templates/free" rel="nofollow" target="_blank"> Freebies </a>
+</li>
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://www.creative-tim.com/templates/premium" rel="nofollow" target="_blank"> Premium </a>
+</li>
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://www.creative-tim.com/blog" rel="nofollow" target="_blank"> Blog
+</a>
+</li>
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://www.creative-tim.com/affiliates/new" rel="nofollow" target="_blank"> Affiliate Program </a>
+</li>
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://www.creative-tim.com/coupon" rel="nofollow" target="_blank">
+Get coupon </a>
+</li>
+</ul>
+</div>
+</li>
+<li class="text-start md:ml-4 lg:ml-5 sm:mb-0 mb-4">
+<div>
+<h6 class="mb-4 text-sm font-semibold uppercase text-gray-600">Help and Support</h6>
+<ul class="flex-column mr-6">
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://www.creative-tim.com/knowledge-center" rel="nofollow" target="_blank"> Knowledge Center </a>
+</li>
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://www.creative-tim.com/contact-us" target="_blank"> Contact Us
+</a>
+</li>
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://www.creative-tim.com/support-terms" target="_blank"> Premium
+Support </a>
+</li>
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://www.creative-tim.com/sponsorships" rel="nofollow" target="_blank"> Sponsorship </a>
+</li>
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://www.creative-tim.com/services/updivision?ref=astro-ecommerce" rel="nofollow" target="_blank"> Custom Development </a>
+</li>
+</ul>
+</div>
+</li>
+<li class="text-start lg:ml-5 md:ml-4 sm:mb-0 mb-4">
+<div>
+<h6 class="mb-4 text-sm font-semibold uppercase text-gray-600">Legal</h6>
+<ul class="flex-column mr-6">
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://www.creative-tim.com/knowledge-center/terml-of-service/" rel="nofollow" target="_blank">
+Terms &amp; Conditions </a>
+</li>
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://www.creative-tim.com/knowledge-center/privacy-policy/" target="_blank"> Privacy Policy </a>
+</li>
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://www.creative-tim.com/license" target="_blank"> Licenses </a>
+</li>
+</ul>
+</div>
+</li>
+<li class="text-start lg:ml-5 md:ml-4 sm:mb-0 mb-4">
+<div>
+<h6 class="mb-4 text-sm font-semibold uppercase text-gray-600">Resources</h6>
+<ul class="flex-column mr-6">
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://www.creative-tim.com/jobs" rel="nofollow" target="_blank">Jobs</a>
+</li>
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://www.creative-tim.com/cheatsheet/bootstrap4" rel="nofollow" target="_blank">Bootstrap Cheat
+Sheet</a>
+</li>
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://www.creative-tim.com/tools" rel="nofollow" target="_blank">Third-Party Tools</a>
+</li>
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://iradesign.io/" rel="nofollow" target="_blank">Illustrations</a>
+</li>
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://www.creative-tim.com/bits" rel="nofollow" target="_blank">Bits</a>
+</li>
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://www.bluehost.com/?utm_medium=affiliate&amp;irpid=105&amp;clickid=P99C105S645N0B9A2D4499E0000V100&amp;pb=affiliate_nonpromo&amp;source=IR&amp;utm_source=IR" rel="nofollow" target="_blank">Bluehost</a>
+</li>
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://www.digitalocean.com/?refcode=276af09d9975&amp;utm_campaign=Referral_Invite&amp;utm_medium=Referral_Program&amp;utm_source=CopyPaste" rel="nofollow" target="_blank">Digital Ocean</a>
+</li>
+<li class="mb-4">
+<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400" href="https://www.creative-tim.com/gallery/get-shit-done-pro" rel="nofollow" target="_blank">Made with
+Creative Tim</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</footer> </div>
+<div class="dimmer"></div>
+<div class="off-canvas">
+<div class="canvas-close">
+<i class="canvas-icon icon icon-window-close"></i>
+</div>
+<div class="mobile-menu"></div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+    </script>
+<script src="/blog/assets/built/main.min.js?v=bc77caee98"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-core.min.js" integrity="sha512-9khQRAUBYEJDCDVP2yw3LRUQvjJ0Pjx0EShmaQjcHa6AXiOv6qHQu9lCAIR8O+/D8FtaCoJ2c0Tf9Xo7hYH01Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-fTl/qcO1VgvKtOMApX2PdZzkziyr2stM65GYPLGuYMnuMm1z2JLJG6XVU7C/mR+E7xBUqCivykuhlzfqxXBXbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CObject.entries%2CObject.assign"></script>
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.3/dist/algoliasearch.umd.js" integrity="sha256-xpIeHMyr5dPVIcLjKZ9plxUrg4lFJ11AMdoPLDEYtPk=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+<script type="text/javascript">
+  docsearch({
+    container: '#docsearch',
+    appId: 'H5FHEK3TTR',
+    indexName: 'creative-tim',
+    apiKey: 'a322bdccce45153c3270b08da1a1c6e7',
+    debug: true
+  });
+</script>
+<script type="text/javascript">
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-135px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+</body>
+</html>

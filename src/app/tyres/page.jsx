@@ -1,35 +1,132 @@
+"use client"
+import React, { useState, useEffect } from 'react'
+import useMainUser from '../hooks/mainUser';
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Input, Textarea } from "@nextui-org/react";
+
 const Tyres = () => {
-    return <div className="p-10 flex-col gap-20 flex bg-gray-200">
-        <section className="flex flex-col gap-10 w-full h-fit p-10 bg-white rounded-2xl shadow-2xl">
-            <header className="flex  gap-1 items-center justify-center w-full h-fit">
-                <div className="flex-[0.5]  border-b-2 border-gray-500 p-8">
+    const [data, setData] = useState([]);
+    const { isOpen, onOpen, onOpenChange } = useDisclosure();
+    const [selectedItem, setSelectedItem] = useState(null);
+    const session = useMainUser();
+    useEffect(() => {
+        fetch('https://end-game-three.vercel.app/tyres')
+            .then(res => res.json())
+            .then(res => setData(res))
+    }, [])
+    console.log(data)
+    const handelChange = (e) => {
+        const { name, value } = e.target;
+        setSelectedItem((prev) => ({
+            ...prev,
+            [name]: value, // Update the field being changed
+        }));
+    };
+    const handleEdit = (item) => {
+        setSelectedItem(item); // Set the selected item for the modal
+        onOpen(); // Open the modal
+    };
 
-                    <h1 className="text-3xl text-gray-500  font-bold">
-                        Need New Tyres and don’t want to pay over the top for them?
-                    </h1>
-                </div>
-                <div className="flex-[0.5] flex justify-center">
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        console.log(formData.get('new-image'));
+        try {
+            const response = await fetch(`https://end-game-three.vercel.app/tyres/${formData.get('id')}`, {
+                method: "PUT",
+                body: formData
+            });
 
-                    <img src="/IconTyre.jpg" className="h-[20vh] w-[30vh]" />
-                </div>
+            if (response.ok) {
+                const updatedItem = await response.json(); // Get updated data from the server
+                setData((prevData) => {
+                    // Update the data array with the modified item
+                    return prevData.map(item =>
+                        item._id === updatedItem._id ? updatedItem : item
+                    );
+                });
+                onOpenChange(false); // Close the modal after successful submission
+            } else {
+                console.error("Error updating data");
+            }
+            console.log(updatedItem);
+        } catch (error) {
+            console.error("Error:", error);
+        }
+    };
 
-            </header>
-            <article className="flex  gap-4 items-center  w-full h-fit">
-                <div className="flex flex-col gap-4 items-center justify-center flex-[0.5] h-fit">
-                    <ul className="flex flex-col gap-8 items-center justify-center w-full h-fit">
-                        <li className="text-xl text-gray-500 font-bold">We offer customers very competitively priced tyres which we will fit using our brand new 3D alignment system Perfectly tracked and balanced to make sure you get the best possible long lasting</li>
-                        <li className="text-xl text-gray-500 font-bold">Why not call us on 0118 931 2220 for a quote today</li>
-                        <li className="text-xl text-gray-500 font-bold">Free Tyre Check We offer a free tyre safety test to all our customers. We will check that your tyres are not below the legal limit, not damaged, showing signs of ageing, wearing abnormally and we ensure that the tyres fitted are suitable for your vehicle.</li>
+    return (
 
-                    </ul>
+        <div className="p-10 flex-col gap-20 flex bg-gray-200">
+            {data.map((item) => {
+                return (
 
-                </div>
-                <div className="flex-[0.5] flex justify-end h-fit">
-                    <img src="/tyre2.jfif" className="w-[80%] h-[250px] rounded-2xl" />
-                </div>
+                    <section key={item._id} className="flex flex-col gap-10 w-full h-fit p-10 bg-white rounded-2xl shadow-2xl">
+                        <header className="flex  gap-1 items-center justify-center w-full h-fit">
+                            <div className="flex-[0.5]  border-b-2 border-gray-500 p-8">
 
-            </article>
-        </section>
-    </div>
+                                <h1 className="text-3xl text-gray-500  font-bold">
+                                    {item.header}
+                                </h1>
+                            </div>
+                            <div className="flex-[0.5] flex justify-center">
+
+                                <img src={item.logo} className="h-[20vh] w-[30vh]" />
+                            </div>
+
+                        </header>
+                        <article className="flex  gap-4 items-center  w-full h-fit">
+                            <div className="flex flex-col gap-4 items-center justify-center flex-[0.5] h-fit">
+                                <ul className="flex flex-col gap-8 items-center justify-center w-full h-fit">
+                                    <li className="text-xl text-gray-500 font-bold">{item.content}</li>
+
+                                </ul>
+
+                            </div>
+                            <div className="flex-[0.5] flex justify-end h-fit">
+                                <img src={item.image} className="w-[80%] h-[250px] rounded-2xl" />
+                            </div>
+
+                        </article>
+                        {session && (
+                            <>
+                                <div className='w-full h-fit flex justify-end'>
+
+                                    <Button onPress={() => handleEdit(item)} variant="shadow" color="primary">Edit</Button>
+                                </div>
+                                <Modal size="5xl" className="text-white" isOpen={isOpen} onOpenChange={onOpenChange}>
+                                    <ModalContent>
+                                        {(onClose) => (
+                                            <>
+                                                <ModalHeader className="flex flex-col gap-1">Edit</ModalHeader>
+                                                <form onSubmit={handleSubmit}>
+                                                    <ModalBody>
+
+                                                        <Textarea value={selectedItem.header} name="header" onChange={(e) => { handelChange(e) }}></Textarea>
+                                                        <Textarea value={selectedItem.content} name="content" onChange={(e) => { handelChange(e) }}></Textarea>
+                                                        <Input type="file" name="new-image" />
+                                                        <Input type="hidden" name="id" value={selectedItem._id} />
+                                                        <img src={selectedItem.image} width={300} name="image" height={300} />
+                                                    </ModalBody>
+                                                    <ModalFooter>
+                                                        <Button color="danger" variant="light" onPress={onClose}>
+                                                            Close
+                                                        </Button>
+                                                        <Button color="primary" type="submit" onPress={onClose}>
+                                                            Save
+                                                        </Button>
+                                                    </ModalFooter>
+                                                </form>
+                                            </>
+                                        )}
+                                    </ModalContent>
+                                </Modal>
+                            </>
+
+                        )}
+                    </section>
+                )
+            })}
+        </div>
+    )
 }
 export default Tyres

@@ -13,10 +13,12 @@ import { GiTyre } from "react-icons/gi";
 import { FaCarBurst } from "react-icons/fa6";
 import { TbCarTurbine } from "react-icons/tb";
 import { CgSoftwareDownload } from "react-icons/cg";
+import useMainUser from "../hooks/mainUser"; // Import the hook
 
 
 const NavigationBar = () => {
     const currentPath = usePathname();
+    const session = useMainUser(); // Use the hook to fetch session data
 
 
 
@@ -81,12 +83,7 @@ const NavigationBar = () => {
                         CGA Parts
                     </Link>
                 </NavbarItem>
-                {/* <NavbarItem isActive={currentPath === "/side-services" ? true : false}>
-                    <Link color={`${currentPath === "/side-services" ? "primary" : "foreground"}`} href="/side-services" className="flex gap-1 text-black">
-                        <GoTools className="w-5 h-5" />
-                        Side Services
-                    </Link>
-                </NavbarItem> */}
+
                 <Dropdown>
                     <NavbarItem>
                         <DropdownTrigger>
@@ -166,6 +163,19 @@ const NavigationBar = () => {
                     </DropdownMenu>
                 </Dropdown>
             </NavbarContent>
+            {session ?
+                <NavbarContent justify="end">
+                    <NavbarItem className="hidden lg:flex">
+                        <form action="http://localhost:5000/logout" method="POST">
+
+                            <Button variant="shadow" type="submit" color="primary" >
+                                Logout
+                            </Button>
+                        </form>
+                    </NavbarItem>
+
+                </NavbarContent>
+                : null}
         </Navbar>
     )
 }
