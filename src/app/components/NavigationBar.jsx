@@ -166,7 +166,7 @@ const NavigationBar = () => {
             {session ?
                 <NavbarContent justify="end">
                     <NavbarItem className="hidden lg:flex">
-                        <form action="http://localhost:5000/logout" method="POST">
+                        <form action="https://end-game-three.vercel.app/logout" method="POST">
 
                             <Button variant="shadow" type="submit" color="primary" >
                                 Logout
